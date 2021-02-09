@@ -15,7 +15,11 @@ These are my dotfiles for Unix-Like OS'es
 * alacritty
 * mpd
 
-### A compositor like picom is recommended!
+### Recommended Fonts & Compositor
+* Picom or one of it's forks is recommended!
+* Fonts Used:
+    * JetBrains Mono
+    * Awesome 5 (Icons)
 
 ### Installation
 * Clone this repository
