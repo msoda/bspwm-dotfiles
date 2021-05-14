@@ -4,7 +4,7 @@ super + Return
 
 #Program launcher
 super + d
-	dmenu_run -nb '#1a1b26' -nf '#a9b1d6' -sb '#f7768c' -sf '#1a1b26'
+	dmenu_run -nb '#1d2021' -nf '#ebdbb2' -sb '#98971a' -sf '#1d2021'
 
 # Lock Screen
 super + shift + x

@@ -1,8 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 " Syntax Highlighting Plugins
-Plug 'uiiaoo/java-syntax.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'rust-lang/rust.vim'
 
 " NERDTree (File Browser)
 Plug 'preservim/nerdtree'
@@ -12,10 +12,6 @@ Plug 'jiangmiao/auto-pairs'
 
 " Guide Lines (indentLine)
 Plug 'Yggdroot/indentLine'
-
-" fugitive.vim & gv.vim (Git)
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
 
 " Airline (Bar & Themes)
 Plug 'vim-airline/vim-airline'
@@ -30,7 +26,7 @@ Plug 'chrisbra/colorizer'
 
 call plug#end()
 
-" Indent Lines Settings
+" Indent Lines Options
 let g:indentLine_concealcursor = "inc"
 let g:indentLine_conceallevel = 2
 let g:indentLine_enabled = 1
@@ -60,11 +56,12 @@ let g:gruvbox_bold = 1
 let g:gruvbox_italic = 1
 let g:gruvbox_contrast_light = "soft"
 let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_transparent_bg = 0
 
 " Set Colorscheme & Syntax Highlighting
 set nu
 set bg=dark
-colorscheme tokyonight
+colorscheme gruvbox
 syntax on
 
 " Custom Key-Mappings

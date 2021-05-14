@@ -35,8 +35,8 @@ height = 25
 radius = 0.0
 fixed-center = true
 
-background = ${tokyonight.background}
-foreground = ${tokyonight.foreground}
+background = ${gruvbox.background}
+foreground = ${gruvbox.foreground}
 
 border-size = 0
 border-color = #00000000
@@ -58,7 +58,7 @@ modules-right = filesystem pulseaudio wlan battery date
 
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
+;tray-background = #000000
 
 wm-restack = bspwm
 ;wm-restack = i3
@@ -86,7 +86,7 @@ mount-0 = /
 
 label-mounted =%{F-}:%percentage_used%%
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${tokyonight.foreground}
+label-unmounted-foreground = ${gruvbox.foreground}
 
 [module/bspwm]
 type = internal/bspwm
@@ -98,17 +98,17 @@ ws-icon-3 = 4;
 ws-icon-4 = 5;
 
 label-focused = %icon%
-label-focused-foreground = ${tokyonight.red}
-label-focused-background = ${tokyonight.background}
-label-focused-underline= ${tokyonight.red}
+label-focused-foreground = ${gruvbox.green}
+label-focused-background = ${gruvbox.background}
+label-focused-underline= ${gruvbox.green}
 label-focused-padding = 2
 
 label-occupied = %icon%
-label-occupied-foreground = ${tokyonight.yellow}
+label-occupied-foreground = ${gruvbox.cyan}
 label-occupied-padding = 2
 
 label-urgent = %icon%!
-label-urgent-background = ${tokyonight.red}
+label-urgent-background = ${gruvbox.red}
 label-urgent-padding = 2
 
 label-empty = %icon%
@@ -136,7 +136,7 @@ interface = wlp1s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = ${tokyonight.foreground}
+format-connected-underline = ${gruvbox.foreground}
 label-connected = %essid%
 
 format-disconnected =
@@ -149,16 +149,16 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${tokyonight.foreground}
+ramp-signal-foreground = ${gruvbox.foreground}
 
 [module/eth]
 type = internal/network
 interface = enp2s0
 interval = 3.0
 
-format-connected-underline = ${tokyonight.foreground}
+format-connected-underline = ${gruvbox.foreground}
 format-connected-prefix = " "
-format-connected-prefix-foreground = ${tokyonight.foreground}
+format-connected-prefix-foreground = ${gruvbox.foreground}
 label-connected = %local_ip%
 
 format-disconnected =
@@ -177,7 +177,7 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${tokyonight.foreground}
+format-prefix-foreground = ${gruvbox.foreground}
 format-underline = #0a6cf5
 
 label = %date% %time%
@@ -190,16 +190,16 @@ label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted =  muted
-label-muted-foreground = ${tokyonight.red}
+label-muted-foreground = ${gruvbox.red}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = ${tokyonight.green}
-bar-volume-foreground-1 = ${tokyonight.green}
-bar-volume-foreground-2 = ${tokyonight.green}
-bar-volume-foreground-3 = ${tokyonight.green}
-bar-volume-foreground-4 = ${tokyonight.yellow}
-bar-volume-foreground-5 = ${tokyonight.yellow}
-bar-volume-foreground-6 = ${tokyonight.red}
+bar-volume-foreground-0 = ${gruvbox.green}
+bar-volume-foreground-1 = ${gruvbox.green}
+bar-volume-foreground-2 = ${gruvbox.green}
+bar-volume-foreground-3 = ${gruvbox.green}
+bar-volume-foreground-4 = ${gruvbox.yellow}
+bar-volume-foreground-5 = ${gruvbox.yellow}
+bar-volume-foreground-6 = ${gruvbox.red}
 bar-volume-gradient = false
 bar-volume-indicator = >
 bar-volume-indicator-font = 0
@@ -222,24 +222,24 @@ format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${tokyonight.foreground}
+format-full-prefix-foreground = ${gruvbox.foreground}
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${tokyonight.red}
+ramp-capacity-foreground = ${gruvbox.red}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${tokyonight.yellow}
+animation-charging-foreground = ${gruvbox.yellow}
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
 animation-discharging-1 = 
 animation-discharging-2 = 
-animation-discharging-foreground = ${tokyonight.red}
+animation-discharging-foreground = ${gruvbox.red}
 animation-discharging-framerate = 750
 
 [module/powermenu]
@@ -250,11 +250,11 @@ expand-right = true
 format-spacing = 1
 
 label-open = 
-label-open-foreground = ${tokyonight.foreground}
+label-open-foreground = ${gruvbox.foreground}
 label-close = 
-label-close-foreground = ${tokyonight.foreground}
+label-close-foreground = ${gruvbox.foreground}
 label-separator = |
-label-separator-foreground = ${tokyonight.foreground}
+label-separator-foreground = ${gruvbox.foreground}
 
 menu-0-0 = 
 menu-0-0-exec = menu-open-1

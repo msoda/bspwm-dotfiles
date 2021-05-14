@@ -16,6 +16,10 @@ export EDITOR="vim"
 export BROWSER="firefox"
 export SHELL="zsh"
 
+export QT_STYLE_OVERRIDE="gtk2"
+export GTK_THEME="Adwaita-dark"
+export GTK2_RC_FILES="/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+
 # Pfetch Environment Variables
 
 export PF_INFO="ascii title os host kernel uptime pkgs memory palette"
@@ -23,7 +27,6 @@ export PF_INFO="ascii title os host kernel uptime pkgs memory palette"
 # Aliases
 
 alias sx='startx'
-alias xr='xrandr --output HDMI1 --mode 1920x1080 --rate 74.94'
 alias ls='ls --color=auto'
 alias music='ncmpcpp'
 alias ydl='youtube-dl'
