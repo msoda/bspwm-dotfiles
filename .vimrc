@@ -13,9 +13,13 @@ Plug 'jiangmiao/auto-pairs'
 " Guide Lines (indentLine)
 Plug 'Yggdroot/indentLine'
 
-" Airline (Bar & Themes)
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Airline-Vim (Bar & Themes)
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+
+" Lightline.vim (Bar & Themes)
+Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 " Colorschemes (Vim Colors)
 Plug 'ghifarit53/tokyonight-vim'
@@ -38,8 +42,16 @@ set shiftwidth=4
 set autoindent
 
 " Vim-Airline Options
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
+
+" Lightline.vim Options
+set noshowmode
+set laststatus=2
+
+let g:lightline = {
+    \ "colorscheme": "gruvbox",
+    \ }
 
 " Color Options
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
