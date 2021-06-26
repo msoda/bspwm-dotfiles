@@ -14,9 +14,9 @@ bsp-layout set tall 1 -- --master-size 0.5
 
 # Bspc Configs
 bspc config border_width	1
-bspc config normal_border_color \#689d6a
-bspc config active_border_color \#689d6a
-bspc config focused_border_color \#98971a
+bspc config normal_border_color \#544d42
+bspc config active_border_color \#544d42
+bspc config focused_border_color \#b5a58f
 
-bspc config window_gap		14
+bspc config window_gap		10
 bspc config split_ratio		0.50
