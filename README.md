@@ -1,7 +1,7 @@
-# dotfiles
+# bspwm-dotfiles
 
 ### Overview
-These are my dotfiles for Unix-Like OS'es
+These are my bspwm dotfiles for Unix-Like OS'es
 
 ### Rice Image
 ![rice](rice.png)
